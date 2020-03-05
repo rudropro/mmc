@@ -1,5 +1,5 @@
 const { Client, Collection, RichEmbed } = require("discord.js");
-const token = "process.env.token"
+const { token } = require("./botconfig.json");
 const { prefix } = require("./botconfig.json");
 const bot = new Client();
  
