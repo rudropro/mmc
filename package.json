@@ -1,0 +1,39 @@
+{
+  "name": "mmc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apextab-api": "^1.0.5",
+    "async": "^3.2.0",
+    "common-tags": "^1.8.0",
+    "dateformat": "^3.0.3",
+    "erela.js": "^1.0.8",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.0",
+    "opusscript": "^0.0.7",
+    "overwatch-api": "^0.8.2",
+    "simple-fortnite-api": "^0.1.9",
+    "snekfetch": "^4.0.4",
+    "superagent": "^5.2.2",
+    "urban": "^0.3.2",
+    "ytdl-core": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudropro/mmc.git"
+  },
+  "keywords": [
+    "y"
+  ],
+  "author": "rudrogamer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudropro/mmc/issues"
+  },
+  "homepage": "https://github.com/rudropro/mmc#readme"
+}
