@@ -1,6 +1,6 @@
 const { Client, Collection, RichEmbed } = require("discord.js");
 const { token } = require("./botconfig.json");
-const prefix = require(process.evn.token);
+const prefix = "NjgzOTEzMTI3MjE3MDcwMTEy.XmEp1A.Y6QvQgFlxIyXTCqmEhzDEC5Drqc";
 const bot = new Client();
  
 var version = "2.O";
