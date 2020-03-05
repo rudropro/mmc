@@ -2,7 +2,7 @@ const { Client, Collection, RichEmbed } = require("discord.js");
 const token = "process.env.token"
 const { prefix } = require("./botconfig.json");
 const bot = new Client();
-
+ 
 var version = "2.O";
 
 ["aliases", "commands"].forEach(x => bot[x] = new Collection());
