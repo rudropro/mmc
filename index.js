@@ -121,7 +121,7 @@ function play(guild, song) {
 }
 
 
-bot.login(token);
+
 
 
 
