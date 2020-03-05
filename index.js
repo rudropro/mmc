@@ -1,6 +1,5 @@
 const { Client, Collection, RichEmbed } = require("discord.js");
 const { prefix } = require("./botconfig.json");
-const token = require(process.env.token)
 const bot = new Client();
  
 var version = "2.O";
@@ -121,7 +120,7 @@ function play(guild, song) {
 }
 
 
-bot.login(token);
+bot.login(process.env.token);
 
 
 
