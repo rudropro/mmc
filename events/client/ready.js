@@ -1,25 +1,20 @@
-const { ErelaClient, Utils } = require("erela.js");
-const { nodes } = require("../../botconfig.json")
+const Discord = require("discord.js")
+
 
 module.exports = bot => {
-    console.log(`${bot.user.username} is online`);
+     console.log(`${bot.user.username} is online`)
+    // bot.user.setActivity("Hello", {type: "STREAMING", url:"https://twitch.tv/Strandable"});
 
-    bot.music = new ErelaClient(bot, nodes)
-        .on("nodeError", console.log)
-        .on("nodeConnect", () => console.log("Successfully created a new Node."))
-        .on("queueEnd", player => {
-            player.textChannel.send("Queue has ended.")
-            return bot.music.players.destroy(player.guild.id)
-        })
-        .on("trackStart", ({textChannel}, {title, duration}) => textChannel.send(`Now playing: **${title}** \`${Utils.formatTime(duration, true)}\``).then(m => m.delete(15000)));
+    let statuses = [
+        `${bot.guilds.size} servers!`,
+        "!help",
+        `over ${bot.users.size} users!`
+    ]
 
-    bot.levels = new Map()
-        .set("none", 0.0)
-        .set("low", 0.10)
-        .set("medium", 0.15)
-        .set("high", 0.25);
+    setInterval(function() {
+        let status = statuses[Math.floor(Math.random() * statuses.length)];
+        bot.user.setActivity(status, {type: "WATCHING"});
 
-    let activities = [ `${bot.guilds.size} servers!`, `${bot.channels.size} channels!`, `${bot.users.size} users!` ], i = 0;
-    setInterval(() => bot.user.setActivity(`${bot.prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }), 15000)
+    }, 5000)
 
-};
+}
