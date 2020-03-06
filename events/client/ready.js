@@ -8,7 +8,7 @@ module.exports = bot => {
     let statuses = [
         `${bot.guilds.size} servers!`,
         "!help",
-        "Made by rudrogamer"
+        "Made by rudrogamer",
         `over ${bot.users.size} users!`
     ]
 
