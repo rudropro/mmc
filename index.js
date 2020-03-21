@@ -7,10 +7,6 @@ var version = "2.O";
 ["aliases", "commands"].forEach(x => bot[x] = new Collection());
 ["console", "command", "event"].forEach(x => require(`./handlers/${x}`)(bot));
 
-const ytdl = require('ytdl-core');
-
-
-
 bot.login(process.env.token);
 
 
