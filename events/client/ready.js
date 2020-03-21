@@ -6,9 +6,9 @@ module.exports = bot => {
     // bot.user.setActivity("Hello", {type: "STREAMING", url:"https://twitch.tv/Strandable"});
 
     let statuses = [
-        `${bot.guilds.size} servers!`,
         "!help",
-        "Made by rudrogamer"
+        "Made by rudrogamer",
+        "prefix is !"
     ]
 
     setInterval(function() {
