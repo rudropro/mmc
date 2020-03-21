@@ -11,7 +11,7 @@ module.exports = {
         accessableby: "Member",
         aliases: ["p", "pplay"]
     },
-    run: async (bot, message, args) => {
+    run: async (bot, message, args, queue) => {
     bot.once('reconnecting', () => {
         console.log('Reconnecting!');
     });
