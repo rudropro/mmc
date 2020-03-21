@@ -1,5 +1,10 @@
 const { Client, Collection, RichEmbed } = require("discord.js");
-const { prefix } = require("./botconfig.json");
+const { 
+    
+    prefix,
+    token 
+
+} = require("./botconfig.json");
 const bot = new Client();
  
 var version = "2.O";
@@ -7,7 +12,11 @@ var version = "2.O";
 ["aliases", "commands"].forEach(x => bot[x] = new Collection());
 ["console", "command", "event"].forEach(x => require(`./handlers/${x}`)(bot));
 
-bot.login(process.env.token);
+const ytdl = require('ytdl-core');
+
+const queue = new Map();
+
+bot.login(token);
 
 
 
