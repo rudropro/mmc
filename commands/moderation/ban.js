@@ -40,3 +40,4 @@ module.exports = {
         sChannel.send(embed)
     }
 }
+}
