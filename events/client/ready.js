@@ -20,7 +20,7 @@ module.exports = bot => {
         .set("medium", 0.15)
         .set("high", 0.25);
 
-    let activities = [ `${bot.guilds.size} servers!`, `${bot.channels.size} channels!`, `${bot.users.size} users!` ], i = 0;
+    let activities = [ `${bot.guilds.size} servers!`, `${bot.channels.size} channels!`, `made by rudrogamer` ], i = 0;
     setInterval(() => bot.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }), 15000)
 
 };
