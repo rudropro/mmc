@@ -9,7 +9,7 @@ module.exports = {
     },
     run: async (bot, message, args) => {
 
-    if(message.author.id != "493328315365589004") return message.channel.send("You're the bot the owner!")
+    if(message.author.id != "203104843479515136") return message.channel.send("You're the bot the owner!")
 
     try {
         await message.channel.send("Bot is shutting down...")
