@@ -15,7 +15,7 @@
     "erela.js": "^1.1.7",
     "fortnite": "^4.3.2",
     "fs": "^0.0.1-security",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "opusscript": "^0.0.7",
     "overwatch-api": "^0.8.2",
     "random-puppy": "^1.1.0",
